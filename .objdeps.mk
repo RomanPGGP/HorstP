@@ -6,7 +6,7 @@ control.o: control.c main.h control.h conf_options.h
 #display-help.o: display-help.c display.h main.h
 #display-history.o: display-history.c display.h main.h hutil.h
 #display-main.o: display-main.c display.h main.h hutil.h olsr_header.h \
- batman_adv_header-14.h listsort.h
+# batman_adv_header-14.h listsort.h
 #display-spectrum.o: display-spectrum.c display.h main.h hutil.h
 #display-statistics.o: display-statistics.c display.h main.h hutil.h
 #display.o: display.c display.h main.h
