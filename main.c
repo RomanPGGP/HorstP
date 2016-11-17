@@ -87,8 +87,8 @@ static fd_set write_fds;
 static fd_set excpt_fds;
 
 static volatile sig_atomic_t is_sigint_caught;
-/*
-void __attribute__ ((format (printf, 2, 3))) 
+
+void __attribute__ ((format (printf, 2, 3)))
 printlog(int level, const char *fmt, ...)
 {
 	char buf[128];
@@ -101,12 +101,12 @@ printlog(int level, const char *fmt, ...)
 	if (conf.quiet || conf.debug || !conf.display_initialized)
 		fprintf(stderr, "%s\n", &buf[1]);
 	else {
-		// fix up string for display log 
+		// fix up string for display log
 		buf[0] = '\n';
-		display_log(level, buf);
+		//display_log(level, buf);
 	}
 }
-*/
+
 
 static void update_history(struct uwifi_packet* p)
 {
