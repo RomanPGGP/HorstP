@@ -32,7 +32,7 @@
 
 #include "main.h"
 #include "network.h"
-#include "display.h"
+//#include "display.h"
 
 extern struct config conf;
 
@@ -343,13 +343,13 @@ static int net_receive_conf_chan(unsigned char *buffer, size_t len)
 			} else {
 				/* success: update UI */
 				conf.intf.channel_set = ch;
-				update_display(NULL);
+				//update_display(NULL);
 			}
 		} else { /* client */
 			conf.intf.channel_idx = uwifi_channel_idx_from_freq(&conf.intf.channels, ch.freq);
 			conf.intf.channel = conf.intf.channel_set = ch;
 			update_spectrum_durations();
-			update_display(NULL);
+			//update_display(NULL);
 		}
 	}
 
