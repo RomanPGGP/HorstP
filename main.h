@@ -31,7 +31,6 @@
 #include <uwifi/wlan_parser.h>
 #include <uwifi/conf.h>
 #include <uwifi/platform.h>
-#define VERSION "5.0"
 #define CONFIG_FILE "/etc/horst.conf"
 
 #ifndef DO_DEBUG
